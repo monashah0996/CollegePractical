@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      //Create the XHR object
+      var xhttp = new XMLHttpRequest();
+      //Open the file
+      xhttp.open("GET", "books.xml", false);
+      //Send the request
+      xhttp.send();
+      // Read data
+      xmlDoc = xhttp.responseXML;
+      console.log(xmlDoc);
+      var title = xmlDoc.getElementsByTagName("title");
+      var price = xmlDoc.getElementsByTagName("price");
+      var books = xmlDoc.getElementsByTagName("book");
+      var result = "<table border='1'>";
+      result += "<tr> <th> Title </th> <th> Price </th> </tr>";
+      for (let i = 0; i < title.length; i++) {
+        result += "<tr>";
+        result += "<td>" + title[i].innerHTML + "</td>";
+        result += "<td>" + price[i].innerHTML + "</td>";
+        result += "</tr>";
+      }
+      result += "</table>";
+      document.getElementById("output").innerHTML = result;
+    </script>
+  </body>
+</html>

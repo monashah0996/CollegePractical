@@ -1,0 +1,27 @@
+<html>
+<!--student id: N01479948-->
+<head>
+    <title>Activity 3</title>
+</head>
+<script>
+    function calculate() {
+        var result;
+        result = parseInt(document.getElementById("price").value) + parseInt(document.getElementById("tax").value);
+        document.getElementById("result").innerHTML = "Total is: " + result;
+    }
+</script>
+<body>
+    <form>
+        Price: <input type="text" id="price">
+        <br>
+        <br>
+        Tax: <input type="text" id="tax">
+        <br>
+        <br>
+        <input type="button" value="Calculate" onclick="calculate()">
+        <br>
+        <br>
+        <label id="result"></label>
+    </form>
+</body>
+</html>

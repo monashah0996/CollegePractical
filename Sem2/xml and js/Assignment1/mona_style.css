@@ -1,0 +1,45 @@
+subtitle::after{
+    content: "\a";
+    white-space: pre;
+}
+
+title::after{
+    content: "\a";
+    white-space: pre;
+}
+
+title{
+    font-weight: bold;
+    font-size: large;
+    border-bottom: 1px solid black;
+}
+
+subtitle{
+    font-style: italic;
+    font-size: medium;
+}
+
+firstName::before{
+    content: "\a";
+    white-space: pre;
+}
+
+datePosted{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+comments::after{
+    content: "\a";
+    white-space: pre;
+}
+
+comments{
+    font-style: italic;
+    font-size: small;
+}
+
+favoritePlayer::after{
+    content: "\a";
+    white-space: pre;
+}

@@ -1,0 +1,15 @@
+<!ELEMENT portfolio (author,date,time,stock+)>
+<!ELEMENT stock (sName,description,category,today)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT sName (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT today (#PCDATA)>
+<!ATTLIST sName symbol CDATA #REQUIRED>
+<!ATTLIST today open CDATA #REQUIRED>
+<!ATTLIST today high CDATA #REQUIRED>
+<!ATTLIST today low CDATA #REQUIRED>
+<!ATTLIST today current CDATA #REQUIRED>
+<!ATTLIST today vol CDATA #REQUIRED>

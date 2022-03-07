@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+    <user>
+        <intro>My name is Mona</intro>
+        <hobbies>
+            <hobby>Dancing</hobby>
+            <hobby>Watching Films</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Simran</intro>
+        <hobbies>
+            <hobby>Studying</hobby>
+            <hobby>Eating</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Raj</intro>
+        <hobbies>
+            <hobby>Sleeping</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Raju</intro>
+        <hobbies>
+            <hobby>Cricket</hobby>
+            <hobby>Carom</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Pratik</intro>
+        <hobbies>
+            <hobby>Gaming</hobby>
+            <hobby>Studying</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Dinky</intro>
+        <hobbies>
+            <hobby>Dancing</hobby>
+            <hobby>Studying</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Shail</intro>
+        <hobbies>
+            <hobby>Cooking</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Jay</intro>
+        <hobbies>
+            <hobby>Running</hobby>
+            <hobby>Tennis</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Chandu</intro>
+        <hobbies>
+            <hobby>Playing Games</hobby>
+            <hobby>Cooking</hobby>
+        </hobbies>
+    </user>
+    <user>
+        <intro>My name is Prem</intro>
+        <hobbies>
+            <hobby>Hockey</hobby>
+            <hobby>Kabadi</hobby>
+        </hobbies>
+    </user>
+</users>

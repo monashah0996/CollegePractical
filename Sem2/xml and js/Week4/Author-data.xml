@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Sample-XSL-document.xsl"?>
+<authors>
+	<author>
+		<firstName>Danny</firstName>
+		<lastName>Ayers</lastName>
+	</author>
+	<author>
+		<firstName>Joe</firstName>
+		<lastName>Fawcett</lastName>
+	</author>
+	<author>
+		<firstName>William</firstName>
+		<lastName>Shakespeare</lastName>
+	</author>
+</authors>

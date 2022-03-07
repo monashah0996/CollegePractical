@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--ITC5202: XML and JavaScript Professor: Shahdad 
+ITC5202 – Assignment 5 
+I declare that this assignment is my own work in accordance with Humber Academic Policy. 
+No part of this assignment has been copied manually or electronically from any other source 
+(including web sites) or distributed to other students.
+ Name: Mona Shah Student ID: N01479948 Date: 20/02/2022
+-->
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.open("GET","dataseB.xml",false);
+xhttp.send();
+xmlDoc = xhttp.responseXML;
+
+var book = xmlDoc.getElementsByTagName("book");
+var output = "<table border='3'>";
+output += "<tr> <th> ISBN </th> <th> Type </th> </tr>";
+for (let i = 0; i < book.length; i++) {
+    let sp = book[i].getElementsByTagName("sellPrice")[0].innerHTML;
+    if (sp < 10) {
+        output += "<tr>";
+        output += "<td>";
+        output += book[i].getAttribute("ISBN");
+        output += "</td>"; 
+        output += "<td>";
+        output += book[i].getElementsByTagName("type")[0].innerHTML;
+        output += "</td>"; 
+        output += "</tr>";
+    }
+}
+output += "</table>";
+document.getElementById("demo").innerHTML = output;
+</script>
+</body>
+</html>

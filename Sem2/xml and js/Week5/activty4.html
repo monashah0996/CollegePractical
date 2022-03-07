@@ -1,0 +1,28 @@
+<html>
+<!--student id: N01479948-->
+<head>
+    <title>Activity 4</title>
+</head>
+<script>
+    function myFunction(){
+        var color=document.getElementById("bgcolors").value;
+        if(color=="red"){
+            document.body.style.backgroundColor = "red";
+        }
+        else if(color=="green"){
+            document.body.style.backgroundColor = "green";
+        }
+        else{
+            document.body.style.backgroundColor = "blue";
+        }
+    }
+</script>
+<body style="background-color:red;">
+        Select a background Color: 
+        <select id="bgcolors" onchange="myFunction()">
+            <option>red</option>
+            <option>green</option>
+            <option>blue</option>
+        </select>
+</body>
+</html>

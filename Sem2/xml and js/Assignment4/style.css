@@ -1,0 +1,24 @@
+/*ITC5202: XML and JavaScript Professor: Shahdad 
+ITC5202 – Assignment 4 * I declare that this assignment is my own work in accordance with Humber Academic Policy. 
+No part of this assignment has been copied manually or electronically from any other source 
+(including web sites) or distributed to other students.
+ Name: Mona Shah Student ID: N01479948 Date: 14/02/2022
+*/
+
+#container {
+    height: 260px;
+    width: 350px;
+    padding-left: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+#label {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    height: 20px;
+    width: 155px;
+    background-color: white;
+    text-align: center;
+}

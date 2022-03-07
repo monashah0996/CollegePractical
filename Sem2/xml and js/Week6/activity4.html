@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="activity"></p>
+
+    <script>
+      //Create the XHR object
+      var xhttp = new XMLHttpRequest();
+      //Open the file
+      xhttp.open("GET", "books.xml", false);
+      //Send the request
+      xhttp.send();
+      // Read data
+      xmlDoc = xhttp.responseXML;
+      console.log(xmlDoc);
+
+      var title = xmlDoc.getElementsByTagName("title");
+      var price = xmlDoc.getElementsByTagName("price");
+      var books = xmlDoc.getElementsByTagName("book");
+
+      x = xmlDoc.getElementsByTagName("book")[0];
+      xlen = x.childNodes.length;
+      y = x.firstChild;
+      txt = "";
+      for (i = 0; i < xlen; i++) {
+        if (y.nodeType == 1) {
+          txt += i + " " + y.nodeName + "<br>";
+        }
+        y = y.nextSibling;
+      }
+      document.getElementById("activity").innerHTML = txt;
+    </script>
+  </body>
+</html>

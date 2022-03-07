@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<!-- DTD Declaration -->
+<!DOCTYPE products[
+    <!ELEMENT products (product+) >
+    <!ELEMENT product (productName,manufacturer,description,price+,productItems) >
+    <!ELEMENT productName (#PCDATA) >
+    <!ELEMENT manufacturer (#PCDATA) >
+    <!ELEMENT description (#PCDATA) >
+    <!ELEMENT price (#PCDATA) >
+    <!ELEMENT productItems (#PCDATA) >
+]>
+
+<!-- DOCUMENT Body -->
+<products>
+    <product>
+        <productName>Dog Shirt Gift Basket</productName>
+        <manufacturer>SJB Pet Boutique</manufacturer>
+        <description>Something for every day of the week</description>
+        <price>35.99</price>
+        <price>45.99</price>
+        <price>25.99</price>       
+        <productItems>1200, 1201, 1202, 1203, 1204</productItems>
+    </product>
+    <product>
+        <productName>Cat Shirt Gift Basket</productName>
+        <manufacturer>SJB Pet Boutique</manufacturer>
+        <description>Something for every day of the week</description>
+        <price>45.99</price>
+        <price>75.99</price>
+        <price>35.99</price>       
+        <productItems>1300, 1301, 1302, 1303, 1304</productItems>
+    </product>
+</products>

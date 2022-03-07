@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!-- ITC5202 - Your name : Mona -->
+<!--/*********************************************************************************
+* ITC5202 – Assignment 2
+* I declare that this assignment is my own work in accordance with Humber Academic Policy. 
+* No part of this assignment has been copied manually or electronically from any other source
+* (including web sites) or distributed to other students.
+*
+* Name: Mona, Student ID: N01479948, Date: 31/01/2022
+*
+********************************************************************************/ -->
+<order 
+xmlns="http://ITC5202.com/ord"
+xmlns:prod="http://ITC5202.com/prod">
+  <number>123ABBCC123</number>
+  <items>
+    <prod:product>
+      <prod:number>998</prod:number>
+      <prod:size system="US-DRESS">17</prod:size>
+    </prod:product>
+    <prod:product>
+      <prod:number>601</prod:number>
+      <prod:size system="US-DRESS">25</prod:size>
+    </prod:product>
+  </items>
+</order>

@@ -1,0 +1,9 @@
+#label{
+    color: red;
+}
+body{
+    background-color: #ffffcc;
+}
+button {
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Evaluation-2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        Your Email *: <input type="email" id="email"> <label id="label"></label><br><br>
+        Date of Visit: <input type="date" id="date"><br><br>
+        Your Comment: <br>
+        <textarea id="comment" rows="5" cols="40"></textarea></textarea><br><br>
+        <button type="button" onclick="submitFeedback()">Send your Feedback</button>
+        <script>
+            function submitFeedback() {
+              let s = document.getElementById("email").value;
+              document.getElementById("label").innerHTML="";
+              if (s==null || s==""){  
+                document.getElementById("label").innerHTML="This is a required field";
+                } else{
+                    let s1 = document.getElementById("date").value;
+                    let s2 = document.getElementById("comment").value;
+                    alert("Email: "+s+"\nDate of Vist: "+s1+"\nComment: "+s2);
+                }
+            }
+        </script>
+    </body>
+</html>

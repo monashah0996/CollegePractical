@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!--
+   ITC5202: your name: Mona Shah
+
+   Sample data: Catalog of photos 
+-->
+
+<catalog type="photos" xmlns:xs="http://photogallary.com" xs:noNamespaceSchemaLocation="photos.xsd">
+
+   <photo cid="c1748" donatedBy="John Borelli">
+      <name metadata="tunis cooper property museum">Tunis R. Cooper property</name>
+      <description p-type="1st-revision">
+      <![CDATA[ 
+         This photo was taken by John Borelli's great-grandfather. It is believed to have been taken around 1830.
+         David Demarest originally purchased the site of the chair factory in 1663. This site was under the ownership 
+         of the Demarest family until 1758.  The property is listed in the National and New Jersey Registers of Historic Places.
+      ]]>
+      </description>
+      <date>1830 circa</date>
+      <images>
+         <img src="1748a.jpg" />
+         <img src="1748b.jpg" />
+      </images>
+   </photo>
+
+   <photo cid="c1749" donatedBy="John Borelli">
+      <name metadata="tunis cooper property museum">Tunis R. Cooper property</name>
+      <description p-type="2nd-revision">
+      <![CDATA[ 
+         A more recent picture of the property taken by the Borelli family.  The property is listed in the 
+         National and New Jersey Registers of Historic Places.
+      ]]>
+      </description>
+      <date>1950 circa</date>
+      <images>
+         <img src="1749a.jpg" />
+      </images>
+   </photo>
+
+   <photo cid="c1411" donatedBy="Saint Johns Catholic Church">
+      <name metadata="saint johns catholic church">Saint Johns Church</name>
+      <description p-type="final-revision">
+      <![CDATA[ 
+         A more recent picture of the property taken by the Borelli family.  The property is listed in the 
+         National and New Jersey Registers of Historic Places.
+      ]]>
+      </description>      
+      <date>1921</date>
+   </photo>
+
+</catalog>

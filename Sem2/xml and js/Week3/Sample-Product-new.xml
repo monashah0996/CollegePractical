@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<!-- DTD Declaration -->
+<!DOCTYPE products SYSTEM "product.dtd">
+
+<products>
+     <product type="12A">
+        <productName>Dog Shirt Gift Basket</productName>
+        <manufacturer>SJB Pet Boutique</manufacturer>
+        <description>Something for every day of the week</description>
+        <price curr="USD">35.99</price>
+        <price curr="CAD">45.99</price>
+        <price curr="EURO">25.99</price>        
+        <productItems>1200, 1201, 1202, 1203, 1204</productItems>
+    </product>
+    <product type="24B">
+        <productName>Cat Shirt Gift Basket</productName>
+        <manufacturer>SJB Pet Boutique</manufacturer>
+        <description>Something for every day of the week</description>
+        <price curr="USD">45.99</price>
+        <price curr="CAD">75.99</price>
+        <price curr="EURO">35.99</price>        
+        <productItems>1300, 1301, 1302, 1303, 1304</productItems>
+    </product>
+</products>

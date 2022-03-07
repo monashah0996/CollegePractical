@@ -1,0 +1,44 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="portfolio">
+    <xs:annotation>
+      <xs:documentation>ITC5202 - Your name : Mona</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="author"/>
+        <xs:element type="xs:string" name="date"/>
+        <xs:element type="xs:string" name="time"/>
+        <xs:element name="stock" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sName">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="symbol" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:string" name="category"/>
+              <xs:element name="today">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:float" name="open" use="optional"/>
+                      <xs:attribute type="xs:float" name="high" use="optional"/>
+                      <xs:attribute type="xs:float" name="low" use="optional"/>
+                      <xs:attribute type="xs:float" name="current" use="optional"/>
+                      <xs:attribute type="xs:int" name="vol" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

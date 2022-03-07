@@ -1,0 +1,45 @@
+<html>
+<!--ITC5202: XML and JavaScript Professor: Shahdad 
+ITC5202 – Assignment 4 * I declare that this assignment is my own work in accordance with Humber Academic Policy. 
+No part of this assignment has been copied manually or electronically from any other source 
+(including web sites) or distributed to other students.
+ Name: Mona Shah Student ID: N01479948 Date: 14/02/2022
+-->
+
+    <head>
+        <title>Step1</title>
+        <link rel="stylesheet" href="style.css">
+   </head>
+   <script>
+       function calculate(){
+        var i1=document.getElementById("price").value;
+        var i2=document.getElementById("sCost").value
+        var i3=document.getElementById("eCost").value;
+        document.getElementById('totalCost').value = parseInt(i1)+parseInt(i2)+parseInt(i3);
+       }
+   </script>
+   <body>
+    <form >
+        <div id="container">
+            <div id="label">Online Shop Calculator</div>
+            <br>
+            <br>
+            Item Price: <input type="text" id="price">
+            <br>
+            <br>
+            Shipping Cost: <input type="text" id="sCost">
+            <br>
+            <br>
+            Extended Warranty Cost: 
+            <br>
+            <input type="text" id="eCost">
+            <br>
+            <br>
+            <input type="button" value="Calculate Total Cost" onclick="calculate()">
+            <br>
+            <br>
+            Total Cost: <input type="text" id="totalCost">
+        </div>
+    </form>
+   </body>
+</html>
