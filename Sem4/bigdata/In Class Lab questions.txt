@@ -1,0 +1,44 @@
+#Dplyr In Class Exercise 
+Produce a screen shot for every answer so we can go over towards the end or just keep the naswer in the r script file 
+#Follow the below steps 
+
+#first create a new  R file in Rstudio
+#then install the below package 
+install.packages("hflights")
+#then load the dplyr library
+library("dplyr")
+# convert to local data frame
+flights <- hflights
+# test the filter using the below 
+filter(flights, Month==1, DayofMonth==1)
+
+
+#Question 1
+# filter flights dataset by uniquecarrier equal to 'AA' or flightnum equal to 460 and Arrdelay > 5
+# use | for OR condition
+
+
+
+#Question 2
+# select flights dataset the following variables year,month,dayofmonth and any other column that CONTAINS
+# the 'Taxi' and 'Delay' using the contains function
+
+
+#Question 3
+# Using pipe method to select UniqueCarrier and DepDelay columns and then filter for delays over 60 minutes
+
+
+#Question 4
+#Using pipe method to select UniqueCarrier and DepDelay columns and then sort by DepDelay
+
+
+
+#Question 5
+# using pipe method select distance and airtime, create a new variable Speed(calculation of Distance divided by Airtime *60)
+# Also filter where Airtime is Null 'NA' 
+
+
+#Question 6
+#using nesting and pipe and summarise for each carrier, calculate the percentage of flights cancelled or diverted
+
+

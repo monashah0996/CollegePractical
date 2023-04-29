@@ -1,0 +1,7 @@
+In Class Exercise week 3
+load the characters csv file
+
+first step
+mutate a new variable  bmi  ( bmi = as.numeric(mass) / ((height / 100)  ^ 2)) and select all the other variables into a dataframe called bmi_characters
+next step
+group_by(species) and summarise the mean of variable "mass" and "bmi" then filter where mass  > 80 thne arrange mass in descending order and lastly filter  mass in descending where min_rank == 4 
