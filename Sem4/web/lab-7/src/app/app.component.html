@@ -1,0 +1,28 @@
+<div class="tasklist-container">
+  <h2 class="tasklist-header">Tasklist</h2>
+  <input type="text" #searchValue class="tasklist-input" />
+  <button type="button" class="tasklist-search-button" (click)="searchTasklist(searchValue)">Search</button>
+  <br /><br />
+  <table class="tasklist-table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Tasks</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasklist" class="tasklist-item">
+        <td class="tasklist-title">{{ task.title }}</td>
+        <td>
+          <ul class="tasklist-tasks">
+            <li *ngFor="let t of task.tasks">{{ t }}</li>
+          </ul>
+        </td>
+        <td>
+          <button (click)="deleteTasklist(task.id)" class="tasklist-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

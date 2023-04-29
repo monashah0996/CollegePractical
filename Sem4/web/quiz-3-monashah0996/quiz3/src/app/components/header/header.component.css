@@ -1,0 +1,12 @@
+/* Select the header element */
+header {
+  background-color: black;
+
+  color: white;
+
+  font-size: 24px;
+
+  padding: 10px;
+
+  border-bottom: 1px solid white;
+}

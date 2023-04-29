@@ -1,0 +1,18 @@
+<table border="1" [cellPadding]="10" [cellSpacing]="7">
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Image</th>
+    <th>Buy</th>
+  </tr>
+  <tr *ngFor="let g of grocery">
+    <td>{{ g.id }}</td>
+    <td>{{ g.name }}</td>
+    <td>{{ g.quantity }}</td>
+    <td><img height="30" width="30" src="{{ g.img }}" /></td>
+    <td>
+      <a href="#"><i class=""></i>Add</a>
+    </td>
+  </tr>
+</table>

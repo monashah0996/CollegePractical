@@ -1,0 +1,12 @@
+<form [formGroup]="createPostForm" (ngSubmit)="onSubmit()">
+    Name: <input type="text" formControlName="name" />
+    <span *ngIf="!createPostForm.get('name')?.valid">
+      {{ createPostForm.controls.name.errors | json }}
+    </span>
+    <br />
+    Details: <input type="text" formControlName="detail" /> <br />
+    Category: <input type="text" formControlName="category" /> <br />
+    <!-- Date: <input type="text" formControlName="Date" /> <br /> -->
+    <input type="submit" value="Post" />
+  </form>
+  

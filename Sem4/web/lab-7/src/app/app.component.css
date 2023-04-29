@@ -1,0 +1,78 @@
+.tasklist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tasklist-header {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tasklist-input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .tasklist-input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .tasklist-table {
+    width: 100%;
+    max-width: 500px;
+    border-collapse: collapse;
+  }
+  
+  .tasklist-table th,
+  .tasklist-table td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tasklist-table th {
+    background-color: #ccc;
+    font-weight: bold;
+    border-bottom: 1px solid #999;
+  }
+  
+  .tasklist-table td {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tasklist-title {
+    font-weight: bold;
+  }
+  
+  .tasklist-tasks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .tasklist-tasks li {
+    margin-bottom: 5px;
+  }
+  
+  .tasklist-delete {
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .tasklist-delete:hover {
+    background-color: #990000;
+  }
+  

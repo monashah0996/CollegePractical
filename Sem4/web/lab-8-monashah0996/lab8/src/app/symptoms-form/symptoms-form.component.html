@@ -1,0 +1,100 @@
+<h1>Symptom Tracker Form</h1>
+<form [formGroup]="symptomForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="fever">Fever:</label>
+    <input type="number" id="fever" formControlName="fever" required>
+    <div *ngIf="symptomForm.controls['fever'].invalid && (symptomForm.controls['fever'].dirty || symptomForm.controls['fever'].touched)" class="alert alert-danger">
+      <div *ngIf="symptomForm.controls['fever'].errors required">
+        Fever is required.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="cough">Chronic Cough:</label>
+    <input type="number" id="cough" formControlName="cough" required>
+    <div *ngIf="symptomForm.controls['cough'].invalid && (symptomForm.controls['cough'].dirty || symptomForm.controls['cough'].touched)" class="alert alert-danger">
+      <div *ngIf="symptomForm.controls['cough'].errors required">
+        Chronic cough is required.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="appetite">Appetite:</label>
+    <input type="number" id="appetite" formControlName="appetite" required>
+    <div *ngIf="symptomForm.controls['appetite'].invalid && (symptomForm.controls['appetite'].dirty || symptomForm.controls['appetite'].touched)" class="alert alert-danger">
+      <div *ngIf="symptomForm.controls['appetite'].errors required">
+        Appetite is required.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="smell">Loss Of Smell:</label>
+    <input type="number" id="smell" formControlName="smell" required>
+    <div *ngIf="symptomForm.controls['smell'].invalid && (symptomForm.controls['smell'].dirty || symptomForm.controls['smell'].touched)" class="alert alert-danger">
+      <div *ngIf="symptomForm.controls['smell'].errors required">
+        Loss of smell is required.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="abdominal">Abdominal Pain:</label>
+    <input type="number" id="abdominal" formControlName="abdominal" required>
+    <div *ngIf="symptomForm.controls['abdominal'].invalid && (symptomForm.controls['abdominal'].dirty || symptomForm.controls['abdominal'].touched)" class="alert alert-danger">
+      <div *ngIf="symptomForm.controls['abdominal'].errors required">
+        Abdominal pain is required.
+      </div>
+    </div>
+  </div>
+  <div>
+    <label for="date">Date:</label>
+    <input type="text" id="date" formControlName="date" required>
+    <div *ngIf="symptomForm.controls['date'].invalid && (symptomForm.controls['date'].dirty || symptomForm.controls['date'].touched)" class="alert alert-danger">
+      <div *ngIf="symptomForm.controls['date'].errors required">
+        Date is required.
+      </div>
+    </div>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+
+<h2 *ngIf="showError">Please fill up all the fields.</h2>
+
+<h2 *ngIf="submitted">Symptom Tracker Result</h2>
+
+<table *ngIf="submitted">
+  <thead>
+    <tr>
+      <th>Symptom</th>
+      <th>Pain Level</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fever</td>
+      <td>{{ symptomForm.value.fever }}</td>
+      <td>{{ symptomForm.value.date }}</td>
+    </tr>
+    <tr>
+      <td>Chronic Cough</td>
+      <td>{{ symptomForm.value.cough }}</td>
+      <td>{{ symptomForm.value.date }}</td>
+    </tr>
+    <tr>
+      <td>Appetite</td>
+      <td>{{ symptomForm.value.appetite }}</td>
+      <td>{{ symptomForm.value.date }}</td>
+    </tr>
+    <tr>
+      <td>Loss Of Smell</td>
+      <td>{{ symptomForm.value.smell }}</td>
+      <td>{{ symptomForm.value.date }}</td>
+    </tr>
+    <tr>
+      <td>Abdominal Pain</td>
+      <td>{{ symptomForm.value.abdominal }}</td>
+      <td>{{ symptomForm.value.date }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,9 @@
+<app-header [petsLength]="pets.length"></app-header>
+<div *ngFor="let pet of pets">
+  <div [ngStyle]="{ color: pet.color }">
+    <h1>Name: {{ pet.name }}</h1>
+    <p>Type: {{ pet.type }}</p>
+    <p>Color: {{ pet.color }}</p>
+    <button (click)="deletePet(pet.name)">Delete</button>
+  </div>
+</div>
