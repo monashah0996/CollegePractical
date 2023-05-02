@@ -1,0 +1,17 @@
+/******************************************************************************
+***
+* ITE5315 – Assignment 4
+* I declare that this assignment is my own work in accordance with Humber Academic Policy. 
+* No part of this assignment has been copied manually or electronically from any other source
+* (including web sites) or distributed to other students.
+* 
+* Name: Mona Student ID: N01479948 Date: 11/21/22
+*
+*
+******************************************************************************
+**/
+
+module.exports = {
+    //url : "mongodb://localhost:27017/assignment4"
+    url : "mongodb+srv://root:root@cluster0.sbaqcv5.mongodb.net/assignment4?retryWrites=true&w=majority"
+};

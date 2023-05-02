@@ -1,0 +1,54 @@
+<table border="1">
+    <th>ID</th>
+    <th>Title</th>
+    <th>ISBN</th>
+    <th>PageCount</th>
+    <th>PublishedDate</th>
+    <th>ThumbnailUrl</th>
+    <th>ShortDescription</th>
+    <th>LongDescription</th>
+    <th>Status</th>
+    <th>Authors</th>
+    <th>Categories</th>
+    {{#each jsondata}}
+        {{#if this.pageCount}}
+            <tr>
+                <td>{{this._id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.isbn}}</td>
+                <td>{{this.pageCount}}</td>
+                <td>{{this.publishedDate.$date}}</td>
+                <td>{{this.thumbnailUrl}}</td>
+                <td>{{this.shortDescription}}</td>
+                <td>{{this.longDescription}}</td>
+                <td>{{this.status}}</td>
+                <td>{{#each this.authors}}
+                    <ul><li>{{this}}</li></ul>
+                {{/each}}</td>
+                <td>{{#each this.categories}}
+                    <ul><li>{{this}}</li></ul>
+                {{/each}}</td>
+            </tr>
+        {{else}}
+            <tr style="background-color: lightyellow;">
+                <td>{{this._id}}</td>
+                <td>{{this.title}}</td>
+                <td>{{this.isbn}}</td>
+                <td><b>Zero</b></td>
+                <td>{{this.publishedDate.$date}}</td>
+                <td>{{this.thumbnailUrl}}</td>
+                <td>{{this.shortDescription}}</td>
+                <td>{{this.longDescription}}</td>
+                <td>{{this.status}}</td>
+                <td>{{#each this.authors}}
+                    <ul><li>{{this}}</li></ul>
+                {{/each}}</td>
+                <td>{{#each this.categories}}
+                    <ul><li>{{this}}</li></ul>
+                {{/each}}</td>
+            </tr>
+        {{/if}}
+
+    {{/each}}
+
+</table>

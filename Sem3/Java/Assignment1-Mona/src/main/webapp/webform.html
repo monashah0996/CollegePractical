@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table border=1 style="border-color:#ffffff; background-color:#ccccff;" align="center" >
+<tr><td colspan="50"><h2 align="center">USER REGISTRATION</h2>
+<center><label id="msg">*Required Fields</label></center></td></tr>
+
+<form action="UserProcess" method="post">
+<tr><td >First Name* </td> <td>Last Name*</td></tr>
+<tr><td><input type = "text" name = "fname" size="15"></td> 
+<td> <input type = "text" name = "lname" size="15"></td></tr>
+<tr><td>Email*</td> <td> Zip Code* </td></tr>
+<tr><td><input type = "text" name = "email" size="25"><span style="padding-left:60px"></td> 
+<td><input type = "text" name = "zip" size="3"></td></tr>
+<tr><td>Username* </td></tr>
+<tr><td><input type = "text" name = "username" size="9"> </td></tr>
+<tr><td>Password* </td> <td>Confirm Password* </td></tr>
+<tr><td><input type = "password" name = "password"  size="9"></td> 
+<td><input type = "password" name = "cpassword"  size="9"></td></tr>
+<tr><td colspan="50">What Music Are You Interested In?<br>
+<input type="checkbox" name="music" value="rock">Rock<span style="padding-left:10px">
+<input type="checkbox" name="music" value="pop">Pop<span style="padding-left:15px">
+<input type="checkbox" name="music" value="bluegrass">Bluegrass<br>
+<input type="checkbox" name="music" value="blues">Blues<span style="padding-left:10px">
+<input type="checkbox" name="music" value="jazz">Jazz<span style="padding-left:8px">
+<input type="checkbox" name="music" value="country">Country<br><br></td></tr>
+<tr><td colspan="50">Would you like to receive email notification on our special sales?<br>
+<input type = "radio" name = "permission" value = "yes">Yes<span style="padding-left:15px">
+<input type = "radio" name = "permission" value="no">No<br><br></td></tr>
+<tr><td colspan="50" align="center"><input type="submit" value="Submit"> <input type="reset" value="Reset"></td></tr>
+</table>
+</form>
+</body>
+</html>

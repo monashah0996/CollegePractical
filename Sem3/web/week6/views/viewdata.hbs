@@ -1,0 +1,44 @@
+<p>Calling from Handlebar</p>
+
+<h1>Call my function {{calculation 10}}</h1>
+
+<p> Today is {{#strong}} Tuesday {{/strong}}</p>
+
+<h3>Here is the name: {{data.1.name}}</h3>
+
+<h3 style="color:blue"> Showing all Information: </h3>
+<table border="1">
+    <th>Name</th>
+    <th>Age</th>
+    <th>Company</th>
+    <th>Occupation</th>
+    {{#each data}}
+    <tr>
+        <td>{{this.name}}</td>
+        <td>{{this.age}}</td>
+        <td>{{this.company}}</td>
+        <td>{{this.occupation}}</td>
+    </tr>
+    {{/each}}
+
+</table>
+
+<h4 style="color:red"> Show List of Authors: </h4>
+
+<table border="1">
+    <th>Name</th>
+    <th>Age</th>
+    <th>Company</th>
+    <th>Occupation</th>
+    {{#each data}}
+        {{#if this.author}}
+        <tr>
+            <td>{{this.name}}</td>
+            <td>{{this.age}}</td>
+            <td>{{this.company}}</td>
+            <td>{{this.occupation}}</td>
+        </tr>
+        {{/if}}
+    {{/each}}
+
+</table>

@@ -1,0 +1,25 @@
+tittle{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+  }
+  body {
+    text-align: center;
+      padding: 50px;
+      font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    }
+  footer{
+    font-weight: bold;
+    font-size: 22px;
+    background-color: gray;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  table{
+    display: flex;
+    justify-content: center;
+  }
